@@ -86,6 +86,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "Hamburger eater",
+    date: "Jan 1st, 2019",
+    firstParagraph: `dsf`,
+
+    secondParagraph: `hu `,
+
+    thirdParagraph: `Lorem`
   }
 ];
 
@@ -112,7 +121,7 @@ function articleMaker(data) {
 
   //create elements
   const article = document.createElement("div");
-  const heading = document.createElement("h2");
+  const title = document.createElement("h2");
   const date = document.createElement("p");
   const p1 = document.createElement("p");
   const p2 = document.createElement("p");
@@ -133,7 +142,7 @@ function articleMaker(data) {
   article.appendChild(btnExpand);
 
   //assign content to the elements
-  heading.textContent = data.title;
+  title.textContent = data.title;
   date.textContent = data.date;
   p1.textContent = data.firstParagraph;
   p2.textContent = data.secondParagraph;
